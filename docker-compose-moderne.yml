@@ -142,7 +142,7 @@ services:
 
   kafka:
     # image: fjardim/kafka
-	image: confluentinc/cp-kafka:latest
+    image: confluentinc/cp-kafka:latest
     container_name: kafka
     hostname: kafka
     ports:
