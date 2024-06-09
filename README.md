@@ -12,24 +12,24 @@ Environnement d'étude des principaux frameworks big data dans Docker.
  * Installation de Docker Desktop sur Windows [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows) ou docker sur [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
  *  [Installation de git](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git)
    
-## SETUP
-*OBS: Esse passo deve ser realizado apena uma vez. Após o ambiente criado, utilizar o docker-compose para iniciar os containers como mostrado no tópico INICIANDO O AMBIENTE*
+## INSTALLATION
+*REMARQUE : Cette étape ne doit être effectuée qu’une seule fois. Une fois l'environnement créé, utilisez docker-compose pour démarrer les conteneurs comme indiqué dans la rubrique DÉMARRAGE DE L'ENVIRONNEMENT*
 
-#### Criação do diretório docker:
-*OBS: Criar um diretório chamado docker*
+#### Création du répertoire docker :
+*REMARQUE : Créez un répertoire appelé docker*
 
-   *  Sugestão no Windows:
-      *  Criar na raiz do seu drive o diretório docker
-         ex: C:\docker
-          
-   * Sugestão no Linux:
-      * Criar o diretório na home do usuário
-        ex: /home/user/docker
+ * Suggestion sous Windows :
+ * Créez le répertoire docker à la racine de votre lecteur
+ ex : C:\docker
 
-#### Em um terminal/DOS, dentro diretório docker, realizar o clone do projeto no github
-          git clone https://github.com/fabiogjardim/bigdata_docker.git
+ * Suggestion sur Linux :
+ * Créer le répertoire dans la maison de l'utilisateur
+ ex : /home/utilisateur/docker
 
-#### No diretório bigdata_docker vai existir os seguintes objetos
+#### Dans un terminal/DOS, dans le répertoire docker, clonez le projet sur github
+ clone git https://github.com/fabiogjardim/bigdata_docker.git
+
+#### Dans le répertoire bigdata_docker, il y aura les objets suivants
 ![ls](ls.JPG)
 
    
