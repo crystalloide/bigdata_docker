@@ -19,15 +19,15 @@ Environnement d'étude des principaux frameworks big data dans Docker.
 *REMARQUE : Créez un répertoire appelé docker*
 
  * Suggestion sous Windows :
- * Créez le répertoire docker à la racine de votre lecteur
+ * Créer le répertoire docker à la racine de votre lecteur
  ex : C:\docker
 
  * Suggestion sur Linux :
- * Créer le répertoire dans la maison de l'utilisateur
+ * Créer le répertoire dans le home de l'utilisateur
  ex : /home/utilisateur/docker
 
 #### Dans un terminal/DOS, dans le répertoire docker, clonez le projet sur github
- clone git https://github.com/crystalloide/bigdata_docker.git
+ git clone https://github.com/crystalloide/bigdata_docker.git
 
 #### Dans le répertoire bigdata_docker, il y aura les objets suivants
 ![ls](ls.JPG)
