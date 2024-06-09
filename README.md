@@ -10,7 +10,7 @@ Environnement d'étude des principaux frameworks big data dans Docker.
 ## LOGICIEL REQUIS
 #### Pour créer et utiliser l'environnement, nous utiliserons git et Docker
  * Installation de Docker Desktop sur Windows [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows) ou docker sur [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
-   *  [Installation de git](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git)
+ *  [Installation de git](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git)
    
 ## SETUP
 *OBS: Esse passo deve ser realizado apena uma vez. Após o ambiente criado, utilizar o docker-compose para iniciar os containers como mostrado no tópico INICIANDO O AMBIENTE*
