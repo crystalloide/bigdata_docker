@@ -147,12 +147,18 @@ services:
     hostname: kafka
     ports:
       - "9092:9092"
+      - "19092:19092"
     #volumes:
     #  - ./data/kafka:/kafka/kafka-logs-kafka
     depends_on:
       - zookeeper
     environment:
       KAFKA_ADVERTISED_HOST_NAME: kafka
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_INTERNAL://localhost:19092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      AUTO_CREATE_TOPICS: true
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     deploy:
       resources:
