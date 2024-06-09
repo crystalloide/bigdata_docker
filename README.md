@@ -33,37 +33,20 @@ Environnement d'étude des principaux frameworks big data dans Docker.
 ![ls](ls.JPG)
 
    
-## INICIANDO O AMBIENTE
-   
-  *No Windows abrir PowerShell, do Linux um terminal*
-
-### No terminal, no diretorio bigdata_docker, executar o docker-compose
-          docker-compose up -d        
-
-### Verificar imagens e containers
- 
-         docker image ls
-
-![docker image ls](docker_image_ls.JPG)
-
-         docker container ls
-
-![docker container](docker_container_ls.JPG)
-
 ## DÉMARRAGE DE L'ENVIRONNEMENT
 
  *Sous Windows, ouvrez PowerShell, sous Linux un terminal*
 
 ### Dans le terminal, dans le répertoire bigdata_docker, exécutez docker-compose
- docker-compose up -d
+ docker compose up -d
 
 ### Vérifiez les images et les conteneurs
 
- image docker ls
+         docker image ls
 
 ![image docker ls](docker_image_ls.JPG)
 
- conteneur docker ls
+         docker container ls
 
 ![conteneur docker](docker_container_ls.JPG)
 
