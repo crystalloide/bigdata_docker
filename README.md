@@ -1,16 +1,16 @@
 
-# BIG DATA ECOSYSTEM COM DOCKER
+# Ecosystème Big Data dans docker
 
-Ambiente para estudo dos principais frameworks big data em docker.
-<br> Esse setup vai criar dockers com os frameworks HDFS, HBase, Hive, Presto, Spark, Jupyter, Hue, Mongodb, Metabase, Nifi, kafka, Mysql e Zookeeper com a seguinte arquitetura:
-<br>  
+Environnement d'étude des principaux frameworks big data dans Docker.
+<br> Cette configuration créera des dockers avec les frameworks HDFS, HBase, Hive, Presto, Spark, Jupyter, Hue, Mongodb, Metabase, Nifi, Kafka, Mysql et Zookeeper avec l'architecture suivante :
+<br>
 
 ![Ecossistema](ecosystem.jpeg)
 
-## SOFTWARES NECESSÁRIOS
-#### Para a criação e uso do ambiente vamos utilizar o git e o Docker 
-   * Instalação do Docker Desktop no Windows [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows) ou o docker no [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
-   *  [Instalação do git](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git)
+## LOGICIEL REQUIS
+#### Pour créer et utiliser l'environnement, nous utiliserons git et Docker
+ * Installation de Docker Desktop sur Windows [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows) ou docker sur [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+   *  [Installation de git](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git)
    
 ## SETUP
 *OBS: Esse passo deve ser realizado apena uma vez. Após o ambiente criado, utilizar o docker-compose para iniciar os containers como mostrado no tópico INICIANDO O AMBIENTE*
