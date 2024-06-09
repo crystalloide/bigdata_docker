@@ -27,7 +27,7 @@ Environnement d'étude des principaux frameworks big data dans Docker.
  ex : /home/utilisateur/docker
 
 #### Dans un terminal/DOS, dans le répertoire docker, clonez le projet sur github
- clone git https://github.com/fabiogjardim/bigdata_docker.git
+ clone git https://github.com/crystalloide/bigdata_docker.git
 
 #### Dans le répertoire bigdata_docker, il y aura les objets suivants
 ![ls](ls.JPG)
@@ -50,35 +50,52 @@ Environnement d'étude des principaux frameworks big data dans Docker.
 
 ![docker container](docker_container_ls.JPG)
 
-## SOLUCIONANDO PROBLEMAS 
-   
-  *No Windows abrir o Docker Quickstart Terminal*
+## DÉMARRAGE DE L'ENVIRONNEMENT
 
-### Parar um containers
-         docker stop [nome do container]      
+ *Sous Windows, ouvrez PowerShell, sous Linux un terminal*
 
-### Parar todos containers
+### Dans le terminal, dans le répertoire bigdata_docker, exécutez docker-compose
+ docker-compose up -d
+
+### Vérifiez les images et les conteneurs
+
+ image docker ls
+
+![image docker ls](docker_image_ls.JPG)
+
+ conteneur docker ls
+
+![conteneur docker](docker_container_ls.JPG)
+
+## RÉSOUDRE LES PROBLÈMES
+
+ *Sous Windows, ouvrez le terminal Docker Quickstart*
+
+### Arrêter un conteneur
+         docker stop [nom du conteneur]
+
+### Arrêter tous les conteneurs
          docker stop $(docker ps -a -q)
-  
-### Remover um container
-         docker rm [nome do container]
 
-### Remover todos containers
-         docker rm $(docker ps -a -q)         
+### Supprimer un conteneur
+         docker rm [nom du conteneur]
 
-### Dados do containers
-         docker container inspect [nome do container]
+### Supprimer tous les conteneurs
+         docker rm $(docker ps -a -q)
 
-### Iniciar um container
-         docker-compose up -d [nome do container]
+### Données du conteneur
+         docker container inspect [nom du conteneur]
 
-### Iniciar todos os containers
+### Démarrer un conteneur
+         docker-compose up -d [nom du conteneur]
+
+### Démarrer tous les conteneurs
          docker-compose up -d 
 
-### Acessar log do container
-         docker container logs [nome do container] 
+### Accéder à la log d'un conteneur
+         docker container logs [nom du conteneur] 
 
-## Acesso WebUI dos Frameworks
+## Accès à l'interface Web des frameworks (Web UI)
  
 * HDFS *http://localhost:50070*
 * Presto *http://localhost:8080*
@@ -91,7 +108,7 @@ Environnement d'étude des principaux frameworks big data dans Docker.
 * Hue *http://localhost:8888*
 * Spark *http://localhost:4040*
 
-## Acesso por shell
+## Accès via un shell
 
    ##### HDFS
 
@@ -109,7 +126,7 @@ Environnement d'étude des principaux frameworks big data dans Docker.
 
           docker exec -it kafka bash
 
-## Acesso JDBC
+## Accès JDBC 
 
    ##### MySQL
           jdbc:mysql://database/employees
@@ -122,30 +139,30 @@ Environnement d'étude des principaux frameworks big data dans Docker.
 
           jdbc:presto://presto:8080/hive/default
 
-## Usuários e senhas
+## Utilisateurs et mots de passe
 
    ##### Hue
-    Usuário: admin
-    Senha: admin
+    Login utilisateur : admin
+    Mot de passe : admin
 
    ##### Metabase
-    Usuário: bigdata@class.com
-    Senha: bigdata123 
+    Login utilisateur: bigdata@class.com
+    Mot de passe: bigdata123 
 
    ##### MySQL
-    Usuário: root
-    Senha: secret
+    Login utilisateur: root
+    Mot de passe: secret
    
    ##### MongoDB
-    Usuário: root
-    Senha: root
-    Authentication Database: admin
+    Login utilisateur: root
+    Mot de passe: root
+    Database d'Authentication : admin
 
-## Imagens   
+## Images   
 
 [Docker Hub](https://hub.docker.com/u/fjardim)
 
-## Documentação Oficial
+## Documentation officielle
 
 * https://zookeeper.apache.org/
 * https://kafka.apache.org/
