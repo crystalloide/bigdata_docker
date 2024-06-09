@@ -38,7 +38,12 @@ Environnement d'étude des principaux frameworks big data dans Docker.
  *Sous Windows, ouvrez PowerShell, sous Linux un terminal*
 
 ### Dans le terminal, dans le répertoire bigdata_docker, exécutez docker-compose
- docker compose up -d
+    docker compose up -d
+
+    sudo chmod 777 -Rf data
+
+# docker compose up -d 
+    docker compose -f docker-compose-moderne.yml up --detach
 
 ### Vérifiez les images et les conteneurs
 
@@ -86,7 +91,12 @@ Environnement d'étude des principaux frameworks big data dans Docker.
 * Mongo Express *http://localhost:8081*
 * Kafka Manager *http://localhost:9000*
 * Metabase *http://localhost:3000*
-* Nifi *http://localhost:9090*
+* Nifi :	  *http://localhost:9090/nifi/    
+			  *https://localhost:8443/nifi/login  
+				=> aller chercher le login/mot de passe dans la log :
+				docker logs nifi 
+				> Generated Username [6216f6c4-9ea7-431f-817c-f61013271884]
+				> Generated Password [8woaxAc3St0MbZEDZPd9Ltqrb3Wtmc1d]
 * Jupyter Spark *http://localhost:8889*
 * Hue *http://localhost:8888*
 * Spark *http://localhost:4040*
