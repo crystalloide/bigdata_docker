@@ -39,7 +39,7 @@ cd bigdata_docker
 
 #### Dans un terminal/DOS, dans le répertoire docker, clonez le projet sur github
 ```bash
-git clone https://github.com/crystalloide/bigdata_docker.git
+git clone https://github.com/crystalloide/bigdata_docker
 ```
 
 #### Dans le répertoire bigdata_docker, il y aura les objets suivants
