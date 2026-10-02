@@ -36,8 +36,11 @@ sudo rm -Rf bigdata_docker
 git clone https://github.com/crystalloide/bigdata_docker
 cd bigdata_docker
 ```
+
 #### Dans un terminal/DOS, dans le répertoire docker, clonez le projet sur github
- git clone https://github.com/crystalloide/bigdata_docker.git
+```bash
+git clone https://github.com/crystalloide/bigdata_docker.git
+```
 
 #### Dans le répertoire bigdata_docker, il y aura les objets suivants
 ![ls](ls.JPG)
@@ -47,21 +50,35 @@ cd bigdata_docker
 
  *Sous Windows, ouvrez PowerShell, sous Linux un terminal*
 
-### Dans le terminal, dans le répertoire bigdata_docker, exécutez docker compose
-    docker compose up -d
+### Pour lancer la stack originelle : dans un terminal placé sur le répertoire bigdata_docker :
 
-    sudo chmod 777 -Rf data
+```bash
+docker compose up -d
+```
 
-# docker compose up -d 
-    docker compose -f docker-compose-moderne.yml up --detach
+```bash
+sudo chmod 777 -Rf data
+```
+
+#### pour lancer la stack modernisée : dans un terminal placé sur le répertoire bigdata_docker :
+```bash
+docker compose -f docker-compose-moderne.yml up --detach
+```
+
+```bash
+sudo chmod 777 -Rf data
+```
 
 ### Vérifiez les images et les conteneurs
-
-         docker image ls
+```bash
+docker image ls
+```
 
 ![image docker ls](docker_image_ls.JPG)
 
-         docker container ls
+```bash
+docker container ls
+```
 
 ![conteneur docker](docker_container_ls.JPG)
 
@@ -70,28 +87,44 @@ cd bigdata_docker
  *Sous Windows, ouvrez le terminal Docker Quickstart*
 
 ### Arrêter un conteneur
-         docker stop [nom du conteneur]
+```bash
+docker stop [nom du conteneur]
+```
 
 ### Arrêter tous les conteneurs
-         docker stop $(docker ps -a -q)
+```bash
+docker stop $(docker ps -a -q)
+```
 
 ### Supprimer un conteneur
-         docker rm [nom du conteneur]
+```bash
+docker rm [nom du conteneur]
+```
 
 ### Supprimer tous les conteneurs
-         docker rm $(docker ps -a -q)
+```bash
+docker rm $(docker ps -a -q)
+```
 
 ### Données du conteneur
-         docker container inspect [nom du conteneur]
+```bash
+docker container inspect [nom du conteneur]
+```
 
 ### Démarrer un conteneur
-         docker-compose up -d [nom du conteneur]
+```bash
+docker-compose up -d [nom du conteneur]
+```
 
 ### Démarrer tous les conteneurs
-         docker-compose up -d 
+```bash
+docker-compose up -d 
+```
 
 ### Accéder à la log d'un conteneur
-         docker container logs [nom du conteneur] 
+```bash
+docker container logs [nom du conteneur]
+```
 
 ## Accès à l'interface Web des frameworks (Web UI)
  
@@ -115,20 +148,24 @@ cd bigdata_docker
 ## Accès via un shell
 
    ##### HDFS
-
-          docker exec -it datanode bash
+```bash
+docker exec -it datanode bash
+```
 
    ##### HBase
-
-          docker exec -it hbase-master bash
+```bash
+docker exec -it hbase-master bash
+```
 
    ##### Sqoop
+```bash
+docker exec -it datanode bash
+```
 
-          docker exec -it datanode bash
-        
    ##### Kafka
-
-          docker exec -it kafka bash
+```bash
+docker exec -it kafka bash
+```
 
 ## Accès JDBC 
 
