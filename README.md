@@ -26,6 +26,16 @@ Environnement d'étude des principaux frameworks big data dans Docker.
  * Créer le répertoire dans le home de l'utilisateur
  ex : /home/utilisateur/docker
 
+#### Pré-requis :
+
+On récupère le projet en local (exemple sur WSL2 ou Linux) :
+
+```bash
+cd ~
+sudo rm -Rf bigdata_docker
+git clone https://github.com/crystalloide/bigdata_docker
+cd bigdata_docker
+```
 #### Dans un terminal/DOS, dans le répertoire docker, clonez le projet sur github
  git clone https://github.com/crystalloide/bigdata_docker.git
 
@@ -37,7 +47,7 @@ Environnement d'étude des principaux frameworks big data dans Docker.
 
  *Sous Windows, ouvrez PowerShell, sous Linux un terminal*
 
-### Dans le terminal, dans le répertoire bigdata_docker, exécutez docker-compose
+### Dans le terminal, dans le répertoire bigdata_docker, exécutez docker compose
     docker compose up -d
 
     sudo chmod 777 -Rf data
